@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     padding: 0;
     margin: 0 auto;
@@ -24,9 +27,18 @@ body {
     height: 550px;
 }
 .line {
-    width: 35%;
-    height: 17%;
+    width: 157px;
+    height: 18%;
     background-color: black;
+}
+.menu-open {
+    width: 57px;
+    height: 33px;
+    margin-top: 69px;
+    margin-left: 25px;
+    background: transparent;
+    border: none;
+    display: none;
 }
 .header-flex{
     display: flex;
@@ -62,6 +74,9 @@ a{
 .wrapper-contacts {
     padding-left: 139px;
     padding-right: 139px;
+}
+.text-myself {
+    width: 683px;
 }
 .bg{
     width: 100%;
@@ -144,11 +159,12 @@ a{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     border: rgba(240, 223, 202, 0.911) 4.5px solid;
-    width: 35%;
+    width: 442px;
     text-align: center;
 }
 ul {
     list-style: none;
+    padding: 0;
 }
 .title-skill{
     margin: 0;
@@ -159,7 +175,7 @@ ul {
 }
 
 .about {
-    width: 100%;
+    width: 683px;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     padding-left: 92px;
@@ -170,14 +186,14 @@ ul {
     border-top: rgba(151, 119, 80, 0.911) 3px solid ;
 }
 .code {
-    width: 100%;
+    width: 683px;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
 }
 figure {
     margin: 0;
     padding-left: 92px;
-    width: 100%;
+    width: 683px;
     cursor: pointer;
 }
 figure:hover {
@@ -185,7 +201,7 @@ figure:hover {
     border-top: rgba(151, 119, 80, 0.911) 3px solid ;
 }
 .educ-courses {
-    width: 100%;
+    width: 683px;
     font-size: 20px;
     font-family: 'Poppins', sans-serif; 
     padding-left: 92px;
@@ -210,8 +226,8 @@ figure:hover {
     font-family: 'Poppins', sans-serif;
 }
 .projects-item {
-    width: 100%;
-    background-color: rgb(253, 241, 226);
+    width: 683px;
+    /*background-color: rgb(253, 241, 226);*/
     margin: 0 auto;
     margin-bottom: 67px;
     max-width: 100%;
@@ -249,12 +265,12 @@ figure:hover {
 .text-project{
     position: absolute;
     max-width: 66%;
-    bottom: 226px;
-    left: 288px;
+    bottom: 90px;
+    left: 155px;
     z-index: 2;
     font-size: 20px;
     font-family: 'Poppins', sans-serif; 
-    color: rgb(251, 250, 224);
+    color: rgb(229, 245, 140);
 }
 
 
@@ -268,12 +284,12 @@ figure:hover {
     display: flex;
 }
 .img-logo{
-    width: 70%;
-    height: 96%;
+    width: 100px;
+    height: 100px;
 }
 .img-github{
-    width: 9%;
-    height: 65%;
+    width: 84px;
+    height: 78px;
     margin-top: 22px;
 }
 .year{
@@ -281,174 +297,195 @@ figure:hover {
     margin-left: 35px;
 }
 /*---------------адаптив-----------*/
-@media (max-width: 1591px) {
-    .wrapper-contant,
-    .wrapper-contacts,
-    .wrapper-footer,
-    .wrapper-info {
-        min-width: 782px;
+.header .show-menu {
+    display: block;
+    padding: 0;
+}
+@media screen and (max-width: 1200px) {
+    .cont-flex {
+        display: block;
     }
-    .line {
-        height: 9%;
+    .contacts-p {
+        padding-left: 0;
+        padding-top: 0;
     }
-    .other {
-        width: 61%;
-    }
-    .img-avatar {
-        width: 350px;
-        height: 450px;
+    .contacts-info {
+        margin: 0;
+        padding-bottom: 24px;
     }
     .about,
     figure,
     .educ-courses,
     .projects {
-        padding-left: 20px;
-    }
-
-}
-@media (max-width: 1024px) {
-    .wrapper-contant,
-    .wrapper-contacts,
-    .wrapper-footer,
-    .wrapper-info {
-        min-width: 746px;
-    }
-    .wrapper-main {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .lang-skill {
-        display: flex;
-        width: 100%;
-        padding-left: 75px;
-    }
-}
-@media (max-width: 768px) {
-    .wrapper-contant,
-    .wrapper-contacts,
-    .wrapper-footer,
-    .wrapper-info {
-        min-width: 728px;
-    }
-    .wrapper-main {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .bg {
-        width: 131%;
-    }
-}
-@media (max-width: 425px) {
-    .bg {
-        width: 236%;
+        padding-left: 0;
     }
     .other {
+        width: 122%;
+    }
+    .wrapper-main {
+        padding-right: 170px;
+        padding-left: 170px;
+    }
+}
+@media screen and (max-width: 1119px) {
+    .wrapper-info {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .wrapper-main {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+@media screen and (max-width: 991px) { 
+    .wrapper-main {
+        padding-left: 107px;
+        padding-right: 107px;
+    }
+    .line {
+        height: 10%;
+    }
+    figure {
+        width: 623px;
+    }
+    .about {
+        width: 633px;
+    }
+    .educ-courses {
+        width: 624px;
+    }
+    .projects {
+        width: 639px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .line {
+        height: 7%;
+    }
+    .nav-header {
+        display: none;
+    }
+    .projects-img {
+        width: 88%;
+    }
+    .wrapper-main {
+        padding-right: 13px;
+        padding-left: 13px;
+    }
+    .projects-link::before {
+        width: 88%;
+    }
+    .menu-open {
+        display: block;
+    }
+    .other{
+        width: 114%;
+    }
+    .code {
+        width: 638px;
+    }
+    .text-myself{
+        width: 593px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .menu-open {
+        display: block;
+    }
+    .wrapper-contant,
+    .wrapper-contacts,
+    .wrapper-info,
+    .wrapper-footer {
+        padding-right: 23px;
+        padding-left: 23px;
+    }
+    .text-project {
+        left: 84px;
+    }
+    .img-avatar {
+        width: 350px;
+        height: 450px;
+    }
+    .other {
+        width: 101%;
+    }
+    .text-myself {
+        height: 303px;
+    } 
+    .about {
+        width: 482px;
+    }
+    .code {
+        width: 518px;
+    }
+    .text-myself {
         width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 270px;
     }
-} 
-@media (max-width: 375px) {
-    .bg {
-        width: 268%;
+    figure {
+        width: 477px;
+    }
+    .educ-courses {
+        width: 479px;
+    }
+    .projects{
+        width: 523px;
+    }
+    .img-github {
+        margin-left: 18px;
     }
 }
-@media (max-width: 320px) {
-    .bg {
-        width: 314%;
+@media screen and (max-width: 320px) { 
+    .header-name {
+        font-size: 20px;
     }
-}
-/*-----------hamburger-menu---------------
-#menu__toggle {
-    opacity: 0;
-  }
-  
-  #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    left: 0;
-  }
-  
-  .menu__btn {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-  
-    width: 26px;
-    height: 26px;
-  
-    cursor: pointer;
-    z-index: 1;
-  }
-  
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    display: block;
+    .text-myself {
+        height: 359px;
+    }
+    .img-avatar {
+        width: 212px;
+        height: 286px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .contacts-info {
+        font-size: 15px;
+    }
+    .lang-skill {
+        font-size: 15px;
+    }
+    .about {
+        width: 253px;
+        font-size: 15px;
+    }
+    figure {
+        width: 264px;
+    }
+    .code {
+        width: 270px;
+    }
+    .educ-courses {
+        font-size: 15px;
+        width: 254px;
+    }
+    .projects-link {
+        width: 105%;
+    }
+    .projects {
+        width: 271px;
+    }
+    .text-project {
+        bottom: 5px;
+        left: 47px;
+    }
+    .show-menu {
     position: absolute;
-  
-    width: 100%;
-    height: 2px;
-  
-    background-color: #616161;
-  
-    transition-duration: .25s;
-  }
-  .menu__btn > span::before {
-    content: '';
-    top: -8px;
-  }
-  .menu__btn > span::after {
-    content: '';
-    top: 8px;
-  }
-  
-  .menu__box {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    top: 0;
-    left: -100%;
-  
-    width: 300px;
-    height: 100%;
-  
-    margin: 0;
-    padding: 80px 0;
-  
-    list-style: none;
-  
-    background-color: #ECEFF1;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  
-    transition-duration: .25s;
-  }
-  
-  .menu__item {
-    display: block;
-    padding: 12px 24px;
-  
-    color: #333;
-  
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-  
-    text-decoration: none;
-  
-    transition-duration: .25s;
-  }
-  .menu__item:hover {
-    background-color: #CFD8DC;
-  }
-  */
+    top: -15px;
+    right: 153px;
+    background-color: wheat;
+    }
+}
+

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js/menu.js">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
@@ -12,7 +13,7 @@
     <title>CV</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="wrapper-main">
             <div class="wrapper-contant">
                 <div class="header-flex">
@@ -20,28 +21,24 @@
                         <p class="header-name"> <b>YULIA</b> VASHCHANKA</p>
                         <div class="line"></div>
                     </div>
-                   <!----- <div class="menu hamburger-menu">
-                        <input id="menu__toggle" type="checkbox" />
-                        <label class="menu__btn" for="menu__toggle">
-                        <span></span>
-                        </label>
-                    -->
-
+                    <button class="menu-open">
+                        <img src="img/Group 44.svg" alt="menu">
+                    </button>
                         <nav>
-                            <ul class="nav-header menu_box">
-                                <li> <a class="menu_item" href="#">About Myself</a></li>
-                                <li> <a class="menu_item" href="#">Code example</a></li>
-                                <li> <a class="menu_item" href="#">Courses&Education</a></li>
-                                <li> <a class="menu_item" href="#">Projects</a> </li>
-                                <li> <a class="menu_item" href="#">Presentation</a></li>
+                            <ul class="nav-header">
+                                <li> <a class="menu_item" href="#About">About Myself</a></li>
+                                <li> <a class="menu_item" href="#Code">Code example</a></li>
+                                <li> <a class="menu_item" href="#Courses">Courses&Education</a></li>
+                                <li> <a class="menu_item" href="#Projects">Projects</a> </li>
+                                <li> <a class="menu_item" href="#Video">Presentation</a></li>
                             </ul>
                         </nav>
-                    </div>
                 </div>
             </div>
         </div>
-    </header>
-    <main>
+    </div>
+</header>
+<main>
         <section class="contacts">
             <div class="wrapper-main">
                 <div class="bg">
@@ -89,21 +86,20 @@
                         </div>
                         <div class="other">
                             <div class="about">
-                                <h2>About Myself</h2>
-                                <p>gknalrnfeknrgnearlngkenrgkergebrgileagrnear
-                                gsnrkgnkerngkbekrgnskegkjsegrksbegrkjbeg
-                                skjgbrksebrgjaberkserbgksebrgkjbekrgbkejrbgk
-                                sjdrgnkljsbekrgbkaebjrgkjabgkjbkjbgejkgbkje
-                                ksdjgbkjdsbfkjskgrjbaerkgjbkejrgbkjbgkesjgbkj
-                                sdkjgbnkjesbgrkjebakgjbakgrjbkjabergkjarkgjbrkg'jdksbgkrjbegr
-                                ksdngkjbekjrbgkejbrgkjbksbdkgjbakjgbrkagbrkjabgrkeljbg
-                                dkjg;kabgrkaebgrkjbaegrljrg
-                                akgjrbaklejrgbklajebrgkljabergkjbaegrkjbgrkjbalrgjbkag
+                                <h2 id="About">About Myself</h2>
+                                <p class="text-myself">Hi. I'm a beginner front-end developer. 
+                                    I want to master a new profession for me - this is a front-end developer. 
+                                    In the future, I would really like to work on large projects and 
+                                    create interactive sites. If we talk about me, I really like to 
+                                    learn something new and interesting for me. I really love to ride 
+                                    a bike on the bike trail. I lead an active and healthy lifestyle. 
+                                    I am also an amateur photographer, I love taking pictures of 
+                                    landscapes and forest beauty.
                                 </p>
                             </div>
                             <div class="code">
                                 <figure>
-                                    <figcaption> <h2>Code example</h2></figcaption>
+                                    <figcaption> <h2 id="Code">Code example</h2></figcaption>
                                     <pre>
                                         <code class="js">
     function add (y) {
@@ -117,7 +113,7 @@
                                 </figure>
                             </div>
                             <div class="educ-courses">
-                                <h2>Courses&Education</h2>
+                                <h2 id="Courses">Courses&Education</h2>
                                 <p>
                                     Belarusian State University of Economics<br>
                                     Specialty accounting analysis and audit
@@ -129,14 +125,15 @@
                                 </ul>
                             </div>
                             <div class="projects">
-                                <h2 class="title-projects">Projects</h2>
+                                <h2 class="title-projects" id="Projects">Projects</h2>
                                 <article class="projects-item">
-                                    <a class="projects-link" href="https://yuliav1598.github.io/Museum1/" target="_blank">
+                                    <a class="projects-link" href="https://yuliav1598.github.io/WildLife/index" target="_blank">
                                         <img class="projects-img" src="img/2021-09-17_22-21-56.png" alt="">
                                         <div class="text-project">
                                             <h3>Wildlife</h3>
                                             <p>HTML,CSS</p>
-                                            <p></p>
+                                            <p>Small page for animal donation. 
+                                                HTML and CSS technologies were used</p>
                                         </div>
                                     </a>
                                 </article>
@@ -146,19 +143,22 @@
                                         <div class="text-project">
                                             <h3>Louvre</h3>
                                             <p>HTML,CSS</p>
-                                            <p></p>
+                                            <p>Зage of the famous museum called the Louvre for visitors.
+                                                HTML and CSS technologies were used
+                                            </p>
                                         </div>
                                     </a>
                                 </article>
                             </div>
                             <div class="presentation">
-                                <h2>My presentation</h2>
+                                <h2 id="Video" >My presentation</h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+    </main>
         <footer>
             <div class="footer-flex wrapper-main">
                 <div class="wrapper-footer">
@@ -178,6 +178,7 @@
                 </div>
             </div>
         </footer>
-    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
