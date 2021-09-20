@@ -19,6 +19,10 @@ body {
     margin: 0;
     padding-top: 67px;
 }
+.img-avatar {
+    width: 450px;
+    height: 550px;
+}
 .line {
     width: 35%;
     height: 17%;
@@ -141,6 +145,10 @@ a{
     font-family: 'Poppins', sans-serif;
     border: rgba(240, 223, 202, 0.911) 4.5px solid;
     width: 35%;
+    text-align: center;
+}
+ul {
+    list-style: none;
 }
 .title-skill{
     margin: 0;
@@ -277,30 +285,77 @@ figure:hover {
     .wrapper-contant,
     .wrapper-contacts,
     .wrapper-footer,
-    .wrapper-info,
-    .wrapper-main {
-        min-width: 970px;
+    .wrapper-info {
+        min-width: 782px;
     }
-}
-@media (max-width: 992px) {
-    .wrapper-contant,
-    .wrapper-contacts,
-    .wrapper-footer,
-    .wrapper-info,
-    .wrapper-main {
-        min-width: 750px;
+    .line {
+        height: 9%;
     }
-}
-@media (max-width: 767px) {
-    .wrapper-contant,
-    .wrapper-contacts,
-    .wrapper-footer,
-    .wrapper-info,
-    .wrapper-main {
-        min-width: none;
+    .other {
+        width: 61%;
     }
-}
+    .img-avatar {
+        width: 350px;
+        height: 450px;
+    }
+    .about,
+    figure,
+    .educ-courses,
+    .projects {
+        padding-left: 20px;
+    }
 
+}
+@media (max-width: 1024px) {
+    .wrapper-contant,
+    .wrapper-contacts,
+    .wrapper-footer,
+    .wrapper-info {
+        min-width: 746px;
+    }
+    .wrapper-main {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .lang-skill {
+        display: flex;
+        width: 100%;
+        padding-left: 75px;
+    }
+}
+@media (max-width: 768px) {
+    .wrapper-contant,
+    .wrapper-contacts,
+    .wrapper-footer,
+    .wrapper-info {
+        min-width: 728px;
+    }
+    .wrapper-main {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .bg {
+        width: 131%;
+    }
+}
+@media (max-width: 425px) {
+    .bg {
+        width: 236%;
+    }
+    .other {
+        width: 100%;
+    }
+} 
+@media (max-width: 375px) {
+    .bg {
+        width: 268%;
+    }
+}
+@media (max-width: 320px) {
+    .bg {
+        width: 314%;
+    }
+}
 /*-----------hamburger-menu---------------
 #menu__toggle {
     opacity: 0;
